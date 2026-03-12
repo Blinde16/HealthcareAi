@@ -1,6 +1,16 @@
 export async function POST(request) {
   const body = await request.json();
-  const { firstName, lastName, email, organization, role, challenge, claimVolume, message } = body;
+  const {
+    firstName,
+    lastName,
+    email,
+    organization,
+    organizationType,
+    role,
+    challenge,
+    claimVolume,
+    message
+  } = body;
 
   if (!firstName || !lastName || !email || !organization) {
     return Response.json({ error: "Missing required fields." }, { status: 400 });
@@ -32,6 +42,9 @@ export async function POST(request) {
         },
         Role: {
           rich_text: [{ text: { content: role || "" } }]
+        },
+        "Organization Type": {
+          rich_text: [{ text: { content: organizationType || "" } }]
         },
         Challenge: {
           rich_text: [{ text: { content: challenge || "" } }]

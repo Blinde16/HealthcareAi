@@ -20,7 +20,8 @@ export default function ContactPage() {
           <div>
             <h2>Get in Touch</h2>
             <p style={{ marginBottom: "1.5rem", color: "#64748b" }}>
-              Fill out the form and a member of our team will follow up within 1 business day.
+              Fill out the short form with your organization type and top revenue challenge. A member
+              of our team will follow up within 1 business day.
             </p>
             <ContactForm />
           </div>
