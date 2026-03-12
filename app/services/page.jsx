@@ -52,7 +52,7 @@ export default function ServicesPage() {
       <HeroSection
         label="Consulting-First Service Lines"
         title="Services mapped to financial and operational outcomes"
-        subtitle="Each service is engineered to fit a clear stage of the engagement lifecycle: assess, implement, advise, and eventually productize."
+        subtitle="Each service is engineered to fit a clear stage of the engagement lifecycle: assess, implement, advise, and standardize repeatable playbooks over time."
         cta="Start with an Assessment"
         ctaHref="/revenue-opportunity-assessment"
       />

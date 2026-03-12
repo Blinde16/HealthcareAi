@@ -44,13 +44,13 @@ export default function HomePage() {
     "@type": "Organization",
     name: brandConfig.siteName,
     description: brandConfig.positioningShort,
-    url: "https://healthcare-ai-pi.vercel.app"
+    url: brandConfig.siteUrl
   };
 
   return (
     <>
       <HeroSection
-        label={`${brandConfig.wordmark} · ${brandConfig.heroLabel}`}
+        label={`${brandConfig.heroBranding} · ${brandConfig.heroLabel}`}
         title="Revenue is leaking through your systems. We help healthcare teams find it, fix it, and build smarter operations."
         subtitle={`${brandConfig.categoryLine}. Consulting-first AI delivery for finance, RCM, and operations leaders who need measurable impact, not generic AI decks.`}
         cta="Book a Revenue Opportunity Assessment"
@@ -156,7 +156,7 @@ export default function HomePage() {
             <div className="card"><h3>1. Assessment</h3><p>3–4 weeks. Quantify leakage and prioritize action.</p></div>
             <div className="card"><h3>2. Implementation</h3><p>Fixed-fee build of workflows, dashboards, and operating playbooks.</p></div>
             <div className="card"><h3>3. Advisory Retainer</h3><p>Monthly strategic refinement and expansion support.</p></div>
-            <div className="card"><h3>4. Platform Access</h3><p>Future-facing option for mature clients with repeatable needs.</p></div>
+            <div className="card"><h3>4. Future Productized Tools</h3><p>Designed to become more standardized over time as repeatable delivery patterns emerge.</p></div>
           </div>
         </div>
       </section>

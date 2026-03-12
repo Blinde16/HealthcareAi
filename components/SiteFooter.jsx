@@ -30,8 +30,7 @@ export default function SiteFooter() {
         </nav>
       </div>
       <div className="container footer-bottom">
-        © {new Date().getFullYear()} {brandConfig.footerIdentity}. Temporary brand identity; final
-        name and logo update pending.
+        © {new Date().getFullYear()} {brandConfig.footerIdentity}. All rights reserved.
       </div>
     </footer>
   );
