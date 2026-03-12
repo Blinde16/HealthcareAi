@@ -1,11 +1,21 @@
 import "./globals.css";
 import SiteHeader from "components/SiteHeader";
 import SiteFooter from "components/SiteFooter";
+import { brandConfig } from "lib/brand";
 
 export const metadata = {
-  title: "Healthcare Revenue Intelligence Platform",
-  description:
-    "Healthcare revenue cycle AI platform for denial analytics, underbilling detection, and payer performance visibility."
+  metadataBase: new URL("https://healthcare-ai-pi.vercel.app"),
+  title: {
+    default: brandConfig.metadata.defaultTitle,
+    template: brandConfig.metadata.titleTemplate
+  },
+  description: brandConfig.metadata.description,
+  openGraph: {
+    title: brandConfig.metadata.ogTitle,
+    description: brandConfig.metadata.ogDescription,
+    siteName: brandConfig.metadata.ogSiteName,
+    type: "website"
+  }
 };
 
 export default function RootLayout({ children }) {

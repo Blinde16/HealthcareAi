@@ -1,14 +1,31 @@
 import Link from "next/link";
 
-export default function HeroSection({ title, subtitle, cta, ctaHref = "/contact", secondary, secondaryHref }) {
+export default function HeroSection({
+  label,
+  title,
+  subtitle,
+  cta,
+  ctaHref = "/contact",
+  secondary,
+  secondaryHref
+}) {
   return (
-    <section className="section alt">
-      <div className="container">
+    <section className="section hero">
+      <div className="container reading-width">
+        {label && <p className="eyebrow">{label}</p>}
         <h1>{title}</h1>
-        <p>{subtitle}</p>
-        <div style={{ display: "flex", gap: ".75rem", flexWrap: "wrap", marginTop: "1rem" }}>
-          {cta && <Link href={ctaHref} className="btn">{cta}</Link>}
-          {secondary && <Link href={secondaryHref || "/solution"} className="btn secondary">{secondary}</Link>}
+        <p className="lead">{subtitle}</p>
+        <div className="action-row">
+          {cta && (
+            <Link href={ctaHref} className="btn">
+              {cta}
+            </Link>
+          )}
+          {secondary && (
+            <Link href={secondaryHref || "/"} className="btn secondary">
+              {secondary}
+            </Link>
+          )}
         </div>
       </div>
     </section>
