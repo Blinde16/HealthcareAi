@@ -5,7 +5,7 @@ import { buildPageMetadata } from "lib/seo";
 export const metadata = buildPageMetadata({
   title: "About",
   description:
-    "Mission, founder perspective, advisory model, operating principles, and long-term vision for a healthcare-first AI consulting company built to scale."
+    "Mission, founder perspective, advisory model, operating principles, and long-term vision for a healthcare-first consulting company focused on operational intelligence and AI-assisted execution."
 });
 
 const principles = [
@@ -21,8 +21,8 @@ export default function AboutPage() {
     <>
       <HeroSection
         label="About"
-        title="Healthcare-first AI consulting, structured to scale"
-        subtitle="Mission: deliver AI-powered operational intelligence to healthcare practices and beyond through repeatable systems and playbooks."
+        title="Healthcare-first AI consulting, built for credible execution"
+        subtitle="Mission: help healthcare organizations improve revenue and operations through consulting-led analytics, AI-assisted workflows, and practical implementation."
         cta="Book a Revenue Opportunity Assessment"
         ctaHref="/contact"
       />
@@ -57,7 +57,7 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="muted" style={{ marginTop: "1rem" }}>
-            Long-term vision: healthcare is the beachhead and proving ground, not necessarily the ceiling.
+            Long-term vision: consulting-first today, increasingly standardized over time through repeatable delivery systems and productized components where appropriate.
           </p>
         </div>
       </section>

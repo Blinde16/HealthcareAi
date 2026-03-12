@@ -29,7 +29,7 @@ export default function SecurityPage() {
       </section>
       <section className="section alt">
         <div className="container reading-width">
-          <h2>Enterprise review readiness</h2>
+          <h2>Security review readiness</h2>
           <p>
             A deeper security review package can be shared under NDA as appropriate, including
             architecture discussions, data-flow walkthroughs, and control documentation.

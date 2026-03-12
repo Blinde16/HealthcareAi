@@ -13,7 +13,7 @@ const faqs = [
   ["Do you require PHI?", "Not initially. De-identified extracts can be used first; BAA is required before PHI handling."],
   ["How long does the assessment take?", "Most assessments are completed in 3–4 weeks."],
   ["What happens after the assessment?", "Clients typically move to fixed-fee implementation, then monthly advisory support."],
-  ["Is this software, consulting, or both?", "Consulting-first today with engineered systems; productized access is future-facing."],
+  ["Is this software, consulting, or both?", "Consulting-first today with engineered systems; repeatable tooling may be productized over time."],
   ["Can you work with our billing team or IT stakeholders?", "Yes, cross-functional collaboration is expected in both assessment and implementation."],
   ["How do you approach HIPAA and security?", "BAA-first, minimum necessary data standards, encryption, RBAC, and audit logging."]
 ];

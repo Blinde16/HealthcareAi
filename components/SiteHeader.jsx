@@ -16,7 +16,7 @@ export default function SiteHeader() {
     <header className="header">
       <div className="container row">
         <Link href="/" className="brand-wrap" aria-label="Homepage">
-          <span className="brand">{brandConfig.wordmark}</span>
+          <span className="brand">{brandConfig.navigationBrandText}</span>
           <span className="brand-sub">{brandConfig.categoryLine}</span>
         </Link>
         <nav className="nav" aria-label="Primary navigation">
@@ -27,7 +27,7 @@ export default function SiteHeader() {
           ))}
         </nav>
         <Link className="btn" href="/contact">
-          Book Assessment
+          Book Revenue Opportunity Assessment
         </Link>
       </div>
     </header>
