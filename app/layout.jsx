@@ -4,7 +4,7 @@ import SiteFooter from "components/SiteFooter";
 import { brandConfig } from "lib/brand";
 
 export const metadata = {
-  metadataBase: new URL("https://healthcare-ai-pi.vercel.app"),
+  metadataBase: new URL(brandConfig.siteUrl),
   title: {
     default: brandConfig.metadata.defaultTitle,
     template: brandConfig.metadata.titleTemplate

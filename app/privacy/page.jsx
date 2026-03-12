@@ -1,7 +1,8 @@
+import { brandConfig } from "lib/brand";
 export const metadata = {
-  title: "Privacy Policy | Healthcare Revenue Intelligence",
+  title: `Privacy Policy | ${brandConfig.siteName}`,
   description:
-    "Learn how Healthcare Revenue Intelligence collects, uses, and protects your information."
+    `Learn how ${brandConfig.siteName} collects, uses, and protects your information.`
 };
 
 export default function PrivacyPage() {
@@ -16,7 +17,7 @@ export default function PrivacyPage() {
 
           <h2>1. Who We Are</h2>
           <p>
-            Healthcare Revenue Intelligence ("we," "our," or "us") operates this website and provides
+            {brandConfig.siteName} ("we," "our," or "us") operates this website and provides
             AI-powered revenue cycle analytics services to healthcare organizations. This Privacy Policy
             explains how we handle information collected through this website and our services.
           </p>

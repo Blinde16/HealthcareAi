@@ -44,7 +44,7 @@ export default function HomePage() {
     "@type": "Organization",
     name: brandConfig.siteName,
     description: brandConfig.positioningShort,
-    url: "https://healthcare-ai-pi.vercel.app"
+    url: brandConfig.siteUrl
   };
 
   return (

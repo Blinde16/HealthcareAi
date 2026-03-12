@@ -1,7 +1,8 @@
+import { brandConfig } from "lib/brand";
 export const metadata = {
-  title: "Terms of Service | Healthcare Revenue Intelligence",
+  title: `Terms of Service | ${brandConfig.siteName}`,
   description:
-    "Terms of service governing use of the Healthcare Revenue Intelligence website and platform services."
+    `Terms of service governing use of the ${brandConfig.siteName} website and consulting services.`
 };
 
 export default function TermsPage() {
@@ -16,14 +17,14 @@ export default function TermsPage() {
 
           <h2>1. Acceptance of Terms</h2>
           <p>
-            By accessing or using the Healthcare Revenue Intelligence website ("Site") or our revenue
+            By accessing or using the {brandConfig.siteName} website ("Site") or our revenue
             cycle analytics services ("Services"), you agree to be bound by these Terms of Service
             ("Terms"). If you do not agree to these Terms, do not use the Site or Services.
           </p>
 
           <h2>2. Services Overview</h2>
           <p>
-            Healthcare Revenue Intelligence provides AI-powered revenue cycle management analytics,
+            {brandConfig.siteName} provides consulting-led revenue cycle analytics,
             including denial pattern detection, underbilling signal identification, and payer
             performance intelligence. Our services are intended for healthcare organizations,
             including clinics, multi-location practices, and health systems.
@@ -47,7 +48,7 @@ export default function TermsPage() {
           <h2>5. Intellectual Property</h2>
           <p>
             All content on this Site, including text, graphics, logos, and software, is the property
-            of Healthcare Revenue Intelligence or its licensors and is protected by applicable
+            of {brandConfig.siteName} or its licensors and is protected by applicable
             intellectual property laws. You may not reproduce, distribute, or create derivative works
             without our express written permission.
           </p>
@@ -64,7 +65,7 @@ export default function TermsPage() {
           <h2>7. Healthcare Data & HIPAA</h2>
           <p>
             Our Site does not collect Protected Health Information (PHI). If you engage us for a
-            revenue cycle assessment or platform deployment involving PHI, such engagement is
+            revenue cycle assessment or implementation services involving PHI, such engagement is
             governed by a separate Business Associate Agreement (BAA). See our{" "}
             <a href="/hipaa-security" style={{ color: "#14b8a6" }}>HIPAA Security page</a> for more
             information about our compliance program.
@@ -84,7 +85,7 @@ export default function TermsPage() {
 
           <h2>9. Limitation of Liability</h2>
           <p>
-            To the maximum extent permitted by law, Healthcare Revenue Intelligence shall not be
+            To the maximum extent permitted by law, {brandConfig.siteName} shall not be
             liable for any indirect, incidental, special, consequential, or punitive damages arising
             from your use of the Site or Services, even if advised of the possibility of such damages.
             Our total liability for any claim related to the Site shall not exceed the amount paid by
