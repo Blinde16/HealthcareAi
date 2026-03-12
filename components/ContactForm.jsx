@@ -19,12 +19,19 @@ const CLAIM_VOLUME_OPTIONS = [
   "> 50,000 claims/month"
 ];
 
+const ORG_TYPE_OPTIONS = [
+  "Clinic",
+  "Multi-location Practice",
+  "Small Health System"
+];
+
 export default function ContactForm() {
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
     email: "",
     organization: "",
+    organizationType: "",
     role: "",
     challenge: "",
     claimVolume: "",
@@ -144,6 +151,22 @@ export default function ContactForm() {
           style={inputStyle}
           placeholder="CFO, Revenue Cycle Director, Clinic Owner…"
         />
+      </div>
+
+      <div>
+        <label style={labelStyle} htmlFor="organizationType">Organization Type</label>
+        <select
+          id="organizationType"
+          name="organizationType"
+          value={form.organizationType}
+          onChange={handleChange}
+          style={inputStyle}
+        >
+          <option value="">Select organization type</option>
+          {ORG_TYPE_OPTIONS.map((opt) => (
+            <option key={opt} value={opt}>{opt}</option>
+          ))}
+        </select>
       </div>
 
       <div>

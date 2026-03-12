@@ -31,6 +31,7 @@ export default function TechnologyPage() {
             <li>Role-based access controls</li>
             <li>Audit logs for data access and critical actions</li>
             <li>Least-privilege access design</li>
+            <li>Monitoring and incident response procedures</li>
           </ul>
         </div>
       </section>
