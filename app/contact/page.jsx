@@ -1,61 +1,51 @@
 import HeroSection from "components/HeroSection";
 import ContactForm from "components/ContactForm";
+import { brandConfig } from "lib/brand";
+import { buildPageMetadata } from "lib/seo";
 
-export const metadata = {
-  title: "Contact | Book a Healthcare Revenue Intelligence Consultation",
+export const metadata = buildPageMetadata({
+  title: "Contact",
   description:
-    "Book a consultation to evaluate denial analytics, underbilling opportunities, and AI revenue cycle optimization for your clinic or health system."
-};
+    "Book a Revenue Opportunity Assessment, request a technical security review, or schedule a strategic advisory conversation."
+});
 
 export default function ContactPage() {
   return (
     <>
       <HeroSection
-        title="Let's find your highest-value revenue opportunities."
-        subtitle="Book a consultation to discuss denial trends, payer performance, and underbilling risk."
-        cta="Book a Revenue Opportunity Assessment"
+        label={brandConfig.contactLabel}
+        title="Start the right conversation"
+        subtitle="Use this intake for Revenue Opportunity Assessment requests, security and technical review, or strategic advisory planning."
+        cta="Submit Intake"
+        ctaHref="#contact-form"
       />
       <section className="section">
         <div className="container grid-2" style={{ alignItems: "start" }}>
-          <div>
-            <h2>Get in Touch</h2>
-            <p style={{ marginBottom: "1.5rem", color: "#64748b" }}>
-              Fill out the short form with your organization type and top revenue challenge. A member
-              of our team will follow up within 1 business day.
-            </p>
+          <div id="contact-form">
+            <h2>Who should fill this out</h2>
+            <p className="muted">Finance, RCM, operations, IT, and compliance stakeholders evaluating a near-term engagement.</p>
             <ContactForm />
           </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+          <div className="stack">
             <div className="card">
-              <h3>What to Expect</h3>
-              <ul style={{ paddingLeft: "1.2rem", lineHeight: 1.8 }}>
-                <li>A short discovery call to understand your RCM environment</li>
-                <li>Review of your denial rates, payer mix, and billing workflow</li>
-                <li>Initial assessment of your revenue recovery potential</li>
-                <li>Proposal for a full Revenue Opportunity Assessment if a fit exists</li>
+              <h3>What happens after submission</h3>
+              <ul>
+                <li>Response within 1 business day</li>
+                <li>Brief qualification and context call</li>
+                <li>Recommended path: Assessment, Security Review, or Advisory conversation</li>
               </ul>
             </div>
             <div className="card">
-              <h3>Prefer to Schedule Directly?</h3>
-              <p>
-                Book a 30-minute discovery call at a time that works for you. NDA available for
-                data-sharing discussions.
-              </p>
-              <a
-                href="/pilot"
-                className="btn"
-                style={{ display: "inline-block", marginTop: "1rem" }}
-              >
-                Learn About the Pilot Program
-              </a>
+              <h3>Conversation paths</h3>
+              <ul>
+                <li>Revenue Opportunity Assessment</li>
+                <li>Technical / Security Review</li>
+                <li>Strategic / Advisory Conversation</li>
+              </ul>
             </div>
             <div className="card">
-              <h3>Security & Compliance</h3>
-              <p>
-                We execute a BAA before any PHI is shared. See our{" "}
-                <a href="/hipaa-security" style={{ color: "#14b8a6" }}>HIPAA Security page</a>{" "}
-                for details on our compliance program.
-              </p>
+              <h3>NDA and security reassurance</h3>
+              <p>NDA available on request. BAA required before any PHI is exchanged.</p>
             </div>
           </div>
         </div>

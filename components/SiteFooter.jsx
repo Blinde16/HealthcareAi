@@ -1,37 +1,37 @@
 import Link from "next/link";
+import { brandConfig } from "lib/brand";
 
 export default function SiteFooter() {
   return (
     <footer className="footer">
-      <div className="container" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "1.5rem", alignItems: "flex-start" }}>
+      <div className="container footer-grid">
         <div>
-          <strong>Healthcare Revenue Intelligence</strong>
-          <p style={{ margin: ".4rem 0 0", maxWidth: 360 }}>
-            AI-powered denial analytics, underbilling detection, and payer performance intelligence
-            for clinics and health systems.
+          <strong>{brandConfig.footerIdentity}</strong>
+          <p className="muted" style={{ marginTop: ".6rem", maxWidth: 380 }}>
+            {brandConfig.categoryLine}. Consulting-first delivery for healthcare finance,
+            RCM, operations, and compliance stakeholders.
           </p>
         </div>
-        <nav style={{ display: "flex", flexDirection: "column", gap: ".4rem", fontSize: ".88rem" }}>
-          <strong style={{ fontSize: ".8rem", textTransform: "uppercase", letterSpacing: ".05em", color: "#94a3b8" }}>Platform</strong>
-          <Link href="/problem">The Problem</Link>
-          <Link href="/solution">Our Solution</Link>
-          <Link href="/technology">Technology</Link>
-          <Link href="/pilot">Pilot Program</Link>
+
+        <nav className="footer-nav" aria-label="Site links">
+          <strong>Navigate</strong>
+          <Link href="/revenue-opportunity-assessment">Assessment</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/how-it-works">How It Works</Link>
+          <Link href="/security">Security</Link>
         </nav>
-        <nav style={{ display: "flex", flexDirection: "column", gap: ".4rem", fontSize: ".88rem" }}>
-          <strong style={{ fontSize: ".8rem", textTransform: "uppercase", letterSpacing: ".05em", color: "#94a3b8" }}>Company</strong>
+
+        <nav className="footer-nav" aria-label="Company links">
+          <strong>Company</strong>
           <Link href="/about">About</Link>
+          <Link href="/faqs">FAQs</Link>
           <Link href="/contact">Contact</Link>
-          <Link href="/hipaa-security">HIPAA Security</Link>
-        </nav>
-        <nav style={{ display: "flex", flexDirection: "column", gap: ".4rem", fontSize: ".88rem" }}>
-          <strong style={{ fontSize: ".8rem", textTransform: "uppercase", letterSpacing: ".05em", color: "#94a3b8" }}>Legal</strong>
-          <Link href="/privacy">Privacy Policy</Link>
-          <Link href="/terms">Terms of Service</Link>
+          <Link href="/privacy">Privacy</Link>
         </nav>
       </div>
-      <div className="container" style={{ marginTop: "1.5rem", paddingTop: "1rem", borderTop: "1px solid #e2e8f0", fontSize: ".82rem", color: "#94a3b8" }}>
-        © {new Date().getFullYear()} Healthcare Revenue Intelligence. All rights reserved.
+      <div className="container footer-bottom">
+        © {new Date().getFullYear()} {brandConfig.footerIdentity}. Temporary brand identity; final
+        name and logo update pending.
       </div>
     </footer>
   );
